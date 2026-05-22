@@ -1,0 +1,21 @@
+{
+  "name": "trustmybot",
+  "owner": {
+    "name": "trustmybot",
+    "url": "https://github.com/trustmybot"
+  },
+  "metadata": {
+    "description": "TMB plugin marketplace — STABLE channel. Production-ready releases tracked from the plugin's main branch."
+  },
+  "plugins": [
+    {
+      "name": "tmb",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/trustmybot/plugin.git",
+        "ref": "main"
+      },
+      "description": "TMB multi-agent Claude Code plugin with SQLite trajectory MCP. Stable channel — tags promoted from rc after validation."
+    }
+  ]
+}
