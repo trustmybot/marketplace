@@ -19,7 +19,7 @@ Pick a scope. TMB keeps its trajectory DB and hooks per project, so install it *
 | `project` | `.claude/settings.json` (committed) | The whole team runs TMB on this repo. The default for stable. |
 | `local` | `.claude/settings.local.json` (git-ignored) | Only you run it, or teammates are on other channels. |
 
-Run from the project root. The slash-command form (`/plugin install tmb@trustmybot`) prompts for the scope instead of taking `--scope`.
+Run from the project root.
 
 ```bash
 claude plugin marketplace add trustmybot/marketplace --scope project
@@ -28,7 +28,7 @@ claude plugin install tmb@trustmybot --scope project
 
 Replace both `--scope project` with `--scope local` for a personal install.
 
-Then restart Claude Code and run `/onboard` in the project.
+Then fully quit and relaunch Claude Code, and run `/tmb:onboard` in the project.
 
 ## Upgrade to the newest release
 
@@ -39,7 +39,7 @@ claude plugin marketplace update trustmybot
 claude plugin update tmb@trustmybot --scope project
 ```
 
-Then restart Claude Code (`/reload-plugins` does not rebind the MCP server or the hooks). Release notes are in the plugin's [CHANGELOG](https://github.com/trustmybot/plugin/blob/main/CHANGELOG.md) and on its [releases page](https://github.com/trustmybot/plugin/releases).
+Then fully quit and relaunch Claude Code. Release notes are in the plugin's [CHANGELOG](https://github.com/trustmybot/plugin/blob/main/CHANGELOG.md) and on its [releases page](https://github.com/trustmybot/plugin/releases).
 
 ## Trying a pre-release
 
